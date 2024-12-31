@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form method="POST" action="http://localhost:8000" >
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" >
+        </div>
+        <div>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male"> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+            <input type="radio" id="other" name="gender" value="Other"> Other
+        </div>
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" name="interests" value="Technology"> Technology<br>
+            <input type="checkbox" name="interests" value="Sports"> Sports<br>
+            <input type="checkbox" name="interests" value="Music"> Music<br>
+            <input type="checkbox" name="interests" value="Travel"> Travel<br>
+            <input type="checkbox" name="interests" value="Reading"> Reading<br>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+        <div>
+            <label for="expectedSalary">Expected Salary:</label>
+            <input type="number" id="expectedSalary" name="expectedSalary">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
